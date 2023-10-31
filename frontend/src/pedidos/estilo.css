@@ -1,0 +1,226 @@
+.wallpaper {
+    height: 100%;
+    background: #d9c9c9;
+    padding-bottom: 50px;
+}
+
+.logo {
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 100px;
+    left: -1px;
+    top: 1px;
+    position: relative;
+}
+.divMonitoramento {
+    width: 424px;
+    height: 40px;
+    top: 9px;
+    left: -53px;
+    position: relative;
+}
+
+.posicaoMonitoramento { 
+    width: 424px;
+    height: 40px;
+    top: 2px;
+    left: -53px;
+    position: relative;
+}
+.monitoramento {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.posicaoBotao {
+    text-align: end;
+    margin: auto;
+    padding-right: 39px;
+}
+
+.botaoSair {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 3px 0px #00000040;
+    color: white;
+}
+
+.linhaPrincipal {
+    --bs-gutter-x: 0.1rem !important;
+}
+
+.blocoBranco {
+    background-color: white; 
+    float: left;
+    width: 641px;
+    height: 132px;
+    top: 14px;
+    left: -91px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 0px #00000040;
+}
+
+.blocoBrancoTotal {
+    background-color: white; 
+    float: left;
+    width: 396px;
+    height: 132px;
+    top: 14px;
+    right: -168px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 0px #00000040;
+}
+
+.linhaTitulo {
+    width: 263.94px;
+    height: 32px;
+    margin: 15px auto;
+}
+
+.linhaStatus {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.estiloNumeros {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.estiloLegenda {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #4F4F4F;
+}
+
+.textoConfiguracoes {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+}
+
+.textoVendas {
+    font-family: Inter;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+}
+
+.proporcoesCard {
+    width: 240px;
+    height: 198px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin: 17px 12px;
+    position: relative;
+    top: 20px;
+    left: 14px;
+}
+
+.pedidos {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #005A64;
+    width: 150.94px;
+    height: 24px;
+    top: 10px;
+    left: -5.42px;
+    position: relative;
+}
+
+.btnAcessar {
+    position: relative;
+    width: 81.9px;
+    height: 40px;
+    top: 2px;
+    left: 5.52px;
+    border-radius: 4px;
+    border: 1px;
+    border: 1px solid #73B1B2;
+    box-shadow: 0px 2px 3px 0px #00000040;
+    color: #73B1B2;
+}
+
+.itensLista {
+    width: 211.84px;
+    height: 26px;
+    border: 0px, 0px, 1px, 0px;
+    border-bottom: 1px solid #005A64;
+    box-shadow: 0px 2px 4px 0px #00000040;
+    display: flex;
+    margin-top: 14px;
+    position: relative;
+    right: -12px;
+}
+
+.tituloItem {
+    width: 88.35px;
+    height: 11.98px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    position: relative;
+    left: -10px;
+}
+
+.valorItem {
+    width: 99.33px;
+    height: 12.24px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    left: 18px;
+}
+
+.statusAprovado {
+    color: green;
+}
+  
+.statusProcessando {
+    color: orange;
+}
+  
+.statusCancelado {
+    color: red;
+}
+  
+.statusPendente {
+    color: blue;
+}

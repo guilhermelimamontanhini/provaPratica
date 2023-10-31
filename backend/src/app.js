@@ -5,7 +5,7 @@ const app = express();
 
 // Configurações do CORS
 const opcoesCors = {
-    origin: 'http://localhost:3000/', 
+    origin: 'http://localhost:3000', 
     methods: 'GET',
     optionsSuccessStatus: 204
   };
