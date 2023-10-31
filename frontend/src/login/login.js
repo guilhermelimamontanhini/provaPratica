@@ -1,6 +1,7 @@
 import React from 'react';
 import './estilo.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import wallpaper from '../img/fundo-tela-login.png';
 import logo from '../img/logoNegative.png';
 import logoColorido from '../img/logoColor.png';
 import { useNavigate  } from 'react-router-dom';
@@ -9,18 +10,16 @@ function Login() {
 
     const navigate = useNavigate();
 
-    const handleRedirecionarParaPedidos = () => {
-        navigate('/pedidos');
-    };
+    const handleRedirecionarParaPedidos = () => {navigate('/pedidos')};
 
     return (
         <div>
             <div className="conteudo col-md-4">
-                <div className="imagem">
-                    <div>
-                        <img className="logo" src={logo} width="300" height="200"/>
-                    </div>
+                <div class="imagem-container">
+                    <img src={wallpaper} alt="Imagem de fundo"/>
+                    <div class="opacidade-azul"></div>
                 </div>
+                <img className="logoBranco" src={logo}/>
             </div>
             <div className="quadradoBranco col-md-8">
                 <div style={{ margin: '0 257px' }}>
@@ -42,7 +41,9 @@ function Login() {
                             <div style={{ display: 'flex' }}>
                                 <input type="text" className="inputSenha form-control" aria-describedby="button-addon2" id="senha"/>
                                 <div className="input-group-append">
-                                    <button className="btn" style={{backgroundColor: '#002d32', color: 'white'}} type="button" id="button-addon2">Show</button>
+                                    <button className="btn" style={{backgroundColor: '#002d32', color: 'white'}} type="button" id="button-addon2">
+                                        Exibir
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +51,9 @@ function Login() {
                     <div className="row">
                         <div>
                             <button type="button" className="btn" style={{backgroundColor: '#002d32', color: 'white'}} 
-                            onClick={handleRedirecionarParaPedidos}>Entrar</button>
+                            onClick={handleRedirecionarParaPedidos}>
+                                Entrar
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -55,13 +55,13 @@
     --bs-gutter-x: 0.1rem !important;
 }
 
-.blocoBranco {
+.blocoBrancoStatus {
     background-color: white; 
     float: left;
     width: 641px;
     height: 132px;
     top: 14px;
-    left: -91px;
+    left: -78px;
     position: relative;
     border-radius: 8px;
     box-shadow: 0px 2px 4px 0px #00000040;
@@ -73,7 +73,7 @@
     width: 396px;
     height: 132px;
     top: 14px;
-    right: -168px;
+    right: -178px;
     position: relative;
     border-radius: 8px;
     box-shadow: 0px 2px 4px 0px #00000040;
@@ -168,7 +168,13 @@
     border: 1px solid #73B1B2;
     box-shadow: 0px 2px 3px 0px #00000040;
     color: #73B1B2;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+.btnAcessar:hover {
+    background-color: #73B1B2; 
+    color: #fff; 
+  }
 
 .itensLista {
     width: 211.84px;
@@ -210,17 +216,17 @@
 }
 
 .statusAprovado {
-    color: green;
+    color: #005A64;
 }
   
 .statusProcessando {
-    color: orange;
+    color: #FFCE00;
 }
   
 .statusCancelado {
-    color: red;
+    color: #C73939;
 }
   
 .statusPendente {
-    color: blue;
+    color: #2993CE;
 }

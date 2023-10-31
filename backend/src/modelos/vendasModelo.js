@@ -22,6 +22,7 @@ const calculandoTotalVendas = () => {
         // excluindo os pedidos com status "CANCELADO"
         registros.forEach((pedido) => {
           if (pedido.status !== 'CANCELADO') {
+            console.log(pedido.valor);
             totalVendas += pedido.valor;
           }
         });

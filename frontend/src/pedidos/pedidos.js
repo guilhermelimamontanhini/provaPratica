@@ -19,7 +19,7 @@ function Pedidos() {
 
     const navigate = useNavigate();
 
-    const handleRedirecionarParaLogin = () => {navigate('/');};
+    const handleRedirecionarParaLogin = () => {navigate('/')};
 
     useEffect(() => {
         // Requisição para puxar todos os registros
@@ -68,26 +68,32 @@ function Pedidos() {
         
     }, []);
 
+    /**
+     * 
+     * @author Guilherme Lima Motanhini
+     * @description Método para retornar a classe CSS com base no Status do registro
+     * @param {*} status 
+     * @returns {classe CSS}
+     */
     const alterarCorComBaseNoStatus = (status) => {
         switch (status) {
           case 'APROVADO':
-            return 'statusAprovado'; // Adicione essa classe no seu CSS
+            return 'statusAprovado'; 
           case 'PROCESSANDO':
-            return 'statusProcessando'; // Adicione essa classe no seu CSS
+            return 'statusProcessando'; 
           case 'CANCELADO':
-            return 'statusCancelado'; // Adicione essa classe no seu CSS
+            return 'statusCancelado'; 
           case 'PENDENTE':
-            return 'statusPendente'; // Adicione essa classe no seu CSS
+            return 'statusPendente'; 
           default:
             return '';
         }
       }
       
-
     return (
         <div className="wallpaper">
 
-            <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: "#002d32"}}>
+            <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: "#002D32", height: "100px"}}>
                 <div className="row" style={{width: '100%'}}>
                     <div className='col-md-3'><img className="logo" src={logo}/></div>
 
@@ -106,7 +112,7 @@ function Pedidos() {
 
             <div className="container">
                 <div className="row"> 
-                    <div className='col-md-8 blocoBranco'>
+                    <div className='col-md-8 blocoBrancoStatus'>
                         <div className="linhaTitulo"><h4 className="textoConfiguracoes">Status pedidos</h4></div>
                         <div className="linhaStatus">
                             <div className='col-md-2'>
@@ -127,7 +133,7 @@ function Pedidos() {
                             </div>
                             <div className='col-md-2'>
                                 <h5 className="estiloNumeros" style={{color: '#000000'}}>{statusTotalPedidos}</h5>
-                                <p className="estiloLegenda">total</p>
+                                <p className="estiloLegenda">Total</p>
                             </div>
                         </div>
                     </div>
@@ -169,7 +175,5 @@ function Pedidos() {
         </div>
     );
 }
-
-
 
 export default Pedidos;
