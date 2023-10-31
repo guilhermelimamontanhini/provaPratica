@@ -1,6 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 
+/**
+ * 
+ * @author Guilherme Lima Montanhini
+ * @description Função para retornar todos os registros cadastrados na base de dados
+ * @returns {registros}
+ */
 const todosRegistros = () => {
     try {
         // Lê o conteúdo do arquivo dados.json de forma síncrona

@@ -1,13 +1,15 @@
 [
     {
-      "id": 1,
-      "nome": "Item 1",
-      "descricao": "Descrição do Item 1"
+      "id":1,
+      "numero":100001,
+      "valor":120.00,
+      "status":"APROVADO"
     },
     {
-      "id": 2,
-      "nome": "Item 2",
-      "descricao": "Descrição do Item 2"
+      "id":1,
+      "numero":100002,
+      "valor":110.00,
+      "status":"PENDENTE"
     }
   ]
   

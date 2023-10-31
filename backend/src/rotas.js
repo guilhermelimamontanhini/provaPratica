@@ -1,8 +1,12 @@
 const express = require('express');
-const buscarRegistrosControlador = require("./controladores/buscarRegistrosControlador");
+const pedidosControlador = require("./controladores/pedidosControlador");
+const statusControlador = require("./controladores/statusControlador");
+const vendasControlador = require("./controladores/vendasControlador");
 
 const rotas = express.Router();
 
-rotas.get('/teste', buscarRegistrosControlador.retornarRegistros);
+rotas.get('/pedidos', pedidosControlador.retornarRegistros);
+rotas.get('/pedidos/resumoStatus', statusControlador.retornarResumoStatus);
+rotas.get('/pedidos/totalVendas', vendasControlador.retornandoQuantidadeVendas);
 
 module.exports = rotas;
